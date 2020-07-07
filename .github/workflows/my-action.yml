@@ -1,0 +1,22 @@
+name: my-action
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: my-project
+
+      - name: Install dependencies
+        working-directory: my-project
+        run: npm ci
+
+      - name: Build testing
+        working-directory: my-project
+        run: npm build

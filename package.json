@@ -1,0 +1,17 @@
+{
+  "name": "subfont-error-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "subfont --root . --formats woff2 --inline-css --no-fallbacks --output ./result/ index.html",
+    "start": "http-server ./result & open http://127.0.0.1:8080/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "subfont": "^5.0.6"
+  }
+}

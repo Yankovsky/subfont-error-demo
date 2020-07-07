@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "subfont --root . --formats woff2 --inline-css --no-fallbacks --output ./result/ index.html",
+    "build": "subfont --root ./src/ --formats woff2 --inline-css --no-fallbacks --recursive --output ./result/",
     "start": "http-server ./result & open http://127.0.0.1:8080/index.html"
   },
   "keywords": [],

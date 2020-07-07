@@ -19,4 +19,4 @@ jobs:
 
       - name: Build testing
         working-directory: my-project
-        run: npm build
+        run: npm run build

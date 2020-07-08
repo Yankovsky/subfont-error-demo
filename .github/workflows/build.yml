@@ -20,9 +20,6 @@ jobs:
       - name: Install pip dependencies
         run: pip install fonttools brotli zopfli
 
-      - name: pyftsubset --help
-        run: pyftsubset --help
-
       - name: Install npm dependencies
         working-directory: my-project
         run: npm ci

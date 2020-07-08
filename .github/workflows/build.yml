@@ -1,0 +1,25 @@
+name: my-action
+on:
+  push:
+    branches:
+      - github-action
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: my-project
+
+      - name: Install pip dependencies
+        run: pip install fonttools brotli zopfli
+
+      - name: Install npm dependencies
+        working-directory: my-project
+        run: npm ci
+
+      - name: Build
+        working-directory: my-project
+        run: npm run build

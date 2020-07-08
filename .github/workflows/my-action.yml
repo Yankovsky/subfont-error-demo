@@ -13,9 +13,6 @@ jobs:
         with:
           path: my-project
 
-      - name: node -v
-        run: node -v
-
       - name: Install dependencies
         working-directory: my-project
         run: npm ci

@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "subfont --root ./out/ --formats woff2 --inline-css --no-fallbacks --recursive --output x/",
+    "build": "subfont --root ./out/ --formats woff2 --inline-css --no-fallbacks --recursive --dryrun",
     "start": "http-server ./result & open http://127.0.0.1:8080/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@yankovsky/subfont": "^5.3.1",
-    "http-server": "^0.12.3"
+    "http-server": "^0.12.3",
+    "subfont": "^5.0.6"
   }
 }
